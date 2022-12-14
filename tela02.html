@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>CADASTRO</title>
+  </head>
+
+  <body>
+    <form action="/" id="form-cadastro">
+
+      <div id="titulo"><b>GESTORA FIN. REVOLUTION - CADASTRO DE CLIENTES</b></div>
+      <div class="div-input">
+        <span class="label-input">Nome Empresa:</span>
+        <input class="input-cadastro" type="text" required placeholder="Nome Empresa">
+      </div>
+      <div class="div-input">
+        <span class="label-input">Nome:</span>
+        <input class="input-cadastro" type="text" required placeholder="Nome">
+      </div>
+      <div class="div-input">
+        <span class="label-input">Sobrenome:</span>
+        <input class="input-cadastro" type="text" required placeholder="Sobrenome">
+      </div>
+      <div class="div-input">
+        <span class="label-input">Email:</span>
+        <input class="input-cadastro" type="text" required maxlength="60" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="@email.com">
+      </div>
+
+      <div class="div-input">
+        <span class="label-input">CPF:</span>
+        <input class="input-cadastro" type="text" required pattern="\s{11}" placeholder="000.000.000-00">
+      </div>
+      <div class="div-input">
+        <span class="label-input">CNPJ:</span>
+        <input class="input-cadastro" type="text" required pattern="\s{11}" placeholder="00.000.000/0001-00">
+      </div>
+      <div class="div-input">
+        <span class="label-input">Data Nascimento:</span>
+        <input class="input-cadastro" type="date" required min="1922-08-02">
+      </div>
+
+      <div>
+        <button id="btn-cadastrar" type="submit">CADASTRAR</button>
+      </div>
+
+    </form>
+  </body>
+
+</html>
